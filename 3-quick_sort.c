@@ -1,8 +1,5 @@
 #include "sort.h"
-/**
- * this is a function that sorts an array of integers in asc
- * order using quick sort
- */
+
 void swap_ints(int *a, int *b);
 int lomuto_partition(int *array, size_t size, int left, int right);
 void lomuto_sort(int *array, size_t size, int left, int right);
@@ -11,7 +8,10 @@ void quick_sort(int *array, size_t size);
 /**
  * swap_ints - Swaps 2 ints of a given array
  * @a: The 1st int to be swapped
- * @b: The 2nd int to be swapped.
+ * @b: The 2nd int to be swapped
+ *
+ * Description: this is a function that sorts an array of integers in asc
+ * order using quick sort
  */
 void swap_ints(int *a, int *b)
 {
@@ -28,8 +28,8 @@ void swap_ints(int *a, int *b)
  * @size:length size  of array.
  * @left: The starting index of the subset to be ordered.
  * @right: The ending index of the subset to ordered.
- *
- * Returns: The final partition index.
+ * Return: partition scheme index of the array
+ *Description: This function order arrays using the lomuto partition
  */
 int lomuto_partition(int *array, size_t size, int left, int right)
 {
