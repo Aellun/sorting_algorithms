@@ -1,8 +1,6 @@
 #include "sort.h"
 
 /**
- * this is a function that sort array of int in ascending
- * using the shell sort algorithmn(knuth sequence)
  * swap_ints - Swaps 2 ints in an array.
  * @a: 1st int to be to swapped.
  * @b: The 2nd int to be swapped.
