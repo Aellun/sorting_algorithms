@@ -4,11 +4,12 @@ void swap_ints(int *a, int *b);
 void bubble_sort(int *array, size_t size);
 
 /**
- * this function sorts array of integers in ascending order
- * using buble sort algorithm
  * swap_ints - Swaps 2 int in an array.
  * @a: 1st int being swapped
- * @b: 2nd int being swapped.
+ * @b: 2nd int being swapped
+ *
+ * Description: this function sorts array of integers in ascending order
+ * using buble sort algorithm
  */
 void swap_ints(int *a, int *b)
 {
