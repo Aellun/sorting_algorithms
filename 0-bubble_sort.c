@@ -1,5 +1,8 @@
 #include "sort.h"
 
+void swap_ints(int *a, int *b);
+void bubble_sort(int *array, size_t size);
+
 /**
  * this function sorts array of integers in ascending order
  * using buble sort algorithm
