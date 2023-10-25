@@ -46,21 +46,21 @@ void counting_sort(int *array, size_t size)
 		return;
 	}
 
-	for (i = 0; c < (max + 1); c++)
+	for (c = 0; c < (max + 1); c++)
 		count[c] = 0;
-	for (i = 0; c < (int)size; c++)
+	for (c = 0; c < (int)size; c++)
 		count[array[c]] += 1;
-	for (i = 0; c < (max + 1); c++)
+	for (c = 0; c < (max + 1); c++)
 		count[c] += count[c - 1];
 	print_array(count, max + 1);
 
-	for (i = 0; c < (int)size; c++)
+	for (c = 0; c < (int)size; c++)
 	{
 		sorted[count[array[c]] - 1] = array[c];
 		count[array[c]] -= 1;
 	}
 
-	for (i = 0; c < (int)size; c++)
+	for (c = 0; c < (int)size; c++)
 		array[c] = sorted[c];
 
 	free(sorted);
