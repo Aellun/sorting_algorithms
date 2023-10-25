@@ -1,12 +1,13 @@
 #include "sort.h"
 
 /**
- * Descriptions:  This is a function that sorts a doubly linked lists of ints
- * in asc order using insertion sort algorithmn
  * swap_nodes - Swaps 2 nodes in doubly-linked list.
  * @h: A ptr to the head of the doubly-linked list.
  * @n1: A ptr to the 1st node to swap.
- * @n2: 2nd node to swap.
+ * @n2: 2nd node to swap
+ *
+ * Descriptions: This is a function that sorts a doubly linked lists of ints
+ * in asc order using insertion sort algorithmn
  */
 void swap_nodes(listint_t **h, listint_t **n1, listint_t *n2)
 {
